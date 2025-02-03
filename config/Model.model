@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<ns3:modelConfig xsi:type="ns3:ModelConfig" folder="" pauseCalculations="false" entityCode="9" loadPath="ssn" entityName="ssn" version="121" name="ssn" lastUpdated="2025-01-29T10:13:55.372+02:00" lastUpdatedBy="admin" id="admin:MODEL:ssn" xmlns:ns6="http://www.modelshop.com/services/account/types" xmlns:ns5="http://www.modelshop.com/datacore/message/types" xmlns:ns8="http://www.modelshop.com/datacore/generator/types" xmlns:ns7="http://www.modelshop.com/datacore/repository/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/services/model/types" xmlns:ns3="http://www.modelshop.com/model/model/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <datalists entityCode="14" entityName="Selected Test Cases - No ssn" version="121" name="Selected Test Cases - No ssn" created="2025-01-29T10:13:24.890+02:00" createdBy="admin" lastUpdated="2025-01-29T10:13:42.245+02:00" lastUpdatedBy="admin" id="Selected Test Cases - No ssn">
+        <dataFields type="text" fieldCode="100" rawType="java.lang.String" allowNull="true" name="Program" initialized="true" id="Program"/>
+        <dataFields type="integer" fieldCode="101" rawType="java.lang.Long" allowNull="true" name="Test Case Id" initialized="true" id="Test Case Id"/>
+        <dataFields type="text" fieldCode="102" rawType="java.lang.String" allowNull="true" name="Decision Outcome" initialized="true" id="Decision Outcome"/>
+        <dataFields type="text" fieldCode="103" rawType="java.lang.String" allowNull="true" name="Scenario" initialized="true" id="Scenario"/>
+        <dataFields type="text" fieldCode="104" readOnly="true" rawType="java.lang.String" name="sourceName" description="Source name" initialized="true" id="sourceName">
+            <defaultValue source="'Manual Entry'"/>
+        </dataFields>
+        <dataFields type="integer" fieldCode="105" readOnly="true" rawType="java.lang.Long" name="lineNumber" description="Source line number" initialized="true" id="lineNumber">
+            <defaultValue source="id"/>
+        </dataFields>
+        <dataFields type="integer" fieldCode="106" rawType="java.lang.Long" allowNull="true" name="ssn" initialized="true" lastUpdated="2025-01-29T10:13:42.245+02:00" lastUpdatedBy="admin" id="ssn"/>
+    </datalists>
+    <views allColumns="true" default="true" modelView="true" entityName="ssn" name="ssn" description="Default view for list ssn" id="ssn"/>
+    <views allColumns="true" default="true" entityName="Selected Test Cases - No ssn" name="Selected Test Cases - No ssn" description="Default view for list Selected Test Cases - No ssn" id="Selected Test Cases - No ssn"/>
+    <connectors layoutDetected="true" layoutInvalidated="true" entityName="Selected Test Cases - No ssn" version="98" name="Selected Test Cases - No ssn" created="2025-01-29T10:13:24.890+02:00" createdBy="admin" lastUpdated="2025-01-29T08:13:42.000Z" lastUpdatedBy="admin" id="Selected Test Cases - No ssn">
+        <connectorFields ignore="false" mapField="Program" type="text" rawType="String" allowNull="true" name="Program" id="Program"/>
+        <connectorFields ignore="false" mapField="Test Case Id" type="integer" rawType="Long" allowNull="true" name="Test Case Id" id="Test Case Id"/>
+        <connectorFields ignore="false" mapField="Decision Outcome" type="text" rawType="String" allowNull="true" name="Decision Outcome" id="Decision Outcome"/>
+        <connectorFields ignore="false" mapField="Scenario" type="text" rawType="String" allowNull="true" name="Scenario" id="Scenario"/>
+        <connectorFields ignore="false" mapField="ssn" type="integer" rawType="Long" allowNull="true" name="ssn" description="Source name" id="ssn"/>
+        <connectorFields mapField="sourceName" type="text" readOnly="true" rawType="String" name="sourceName" description="Source name" id="sourceName"/>
+        <connectorFields mapField="lineNumber" type="integer" readOnly="true" rawType="Long" name="lineNumber" description="Source line number" id="lineNumber"/>
+        <dataSource connectorUrl="Selected Test Cases.csv">
+            <fileSource>
+                <dataSourceRefs>Selected Test Cases.csv</dataSourceRefs>
+                <dataSourceRefs>Selected Test Cases - No ssn.csv</dataSourceRefs>
+            </fileSource>
+            <loadFilter/>
+        </dataSource>
+        <mediaConfig connectorMediaType="textfile">
+            <textMedia/>
+        </mediaConfig>
+    </connectors>
+    <extra name="ModelCanvasCoordinates" description="Coordinates for ModelCanvasCoordinates" id="ModelCanvasCoordinates">
+        <body>{"DATALIST:Selected Test Cases - No ssn":{"x":20,"y":-52},"CONNECTOR:Selected Test Cases - No ssn":{"x":45,"y":-148}}</body>
+    </extra>
+</ns3:modelConfig>
